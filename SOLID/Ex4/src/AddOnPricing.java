@@ -1,0 +1,5 @@
+package src;
+public interface AddOnPricing {
+    boolean supports(AddOn addOn);
+    Money price(AddOn addOn);
+}
