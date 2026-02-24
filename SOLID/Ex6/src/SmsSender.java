@@ -4,7 +4,7 @@ public class SmsSender extends NotificationSender {
 
     @Override
     protected SendStatus doSend(Notification n) {
-        System.out.println("SMS -> to=" + n.phone + " body=" + n.body);
+        System.out.println("SMS -> to=" + n.phone + " subject=" + n.subject + " body=" + n.body);
         audit.add("sms sent");
         return SendStatus.ok();
     }
